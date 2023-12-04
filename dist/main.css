@@ -1,0 +1,140 @@
+/** @format */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  text-decoration: none;
+  margin: 0px;
+  list-style: none;
+}
+
+/** @format */
+/** @format */
+@keyframes paddingLeft {
+  from {
+    padding-left: 0px;
+  }
+  to {
+    padding-left: 10px;
+  }
+}
+@keyframes maxHeight {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 165px;
+  }
+}
+@keyframes minHeight {
+  from {
+    height: 165px;
+  }
+  to {
+    height: 0px;
+  }
+}
+/* Navbar styles (s)*/
+.parent {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px hsl(210, 22%, 49%);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  padding: 20px 0px;
+}
+.parent .largerScreen {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parent .largerScreen > i {
+  display: none;
+  color: hsl(205, 78%, 60%);
+}
+.parent .largerScreen h1 {
+  cursor: pointer;
+}
+.parent .largerScreen h1 span {
+  color: hsl(205, 78%, 60%);
+}
+.parent .largerScreen ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parent .largerScreen ul li {
+  padding: 5px;
+  letter-spacing: 2px;
+  color: hsl(205, 78%, 60%);
+}
+.parent .largerScreen ul li i {
+  cursor: pointer;
+}
+.parent .largerScreen ul li a {
+  color: hsl(209, 61%, 16%);
+  cursor: pointer;
+}
+.parent .largerScreen ul li a:hover {
+  color: hsl(205, 78%, 60%);
+}
+.parent .smallScreen {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  padding: 10px;
+}
+.parent .smallScreen h1 {
+  cursor: pointer;
+}
+.parent .smallScreen h1 span {
+  color: hsl(205, 78%, 60%);
+}
+.parent .smallScreen i {
+  color: hsl(205, 78%, 60%);
+  line-height: 20px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.parent .smallScreen i:hover {
+  color: hsl(209, 61%, 16%);
+  transform: rotate(90deg);
+}
+.parent .smallScreen .social {
+  display: none;
+}
+.parent .smallScreen ul {
+  height: 0px;
+  overflow-y: hidden;
+  animation-duration: 0.3s;
+  animation-name: minHeight;
+  animation-fill-mode: forwards;
+}
+.parent .smallScreen ul li {
+  letter-spacing: 2px;
+  color: hsl(205, 78%, 60%);
+  height: 40px;
+  width: 100%;
+}
+.parent .smallScreen ul li a {
+  display: block;
+  color: hsl(209, 61%, 16%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.parent .smallScreen ul li a:hover {
+  background-color: hsl(205, 67%, 81%);
+  animation-name: paddingLeft;
+  animation-duration: 0.3s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  color: hsl(205, 76%, 67%);
+}
+
+/* Navbar styles (e)*//*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+/** @format */
+
+@keyframes paddingLeft {
+    from {
+        padding-left: 0px;
+    }
+    to {
+        padding-left: 10px;
+    }
+}
+@keyframes maxHeight {
+	from {
+        height: 0px;
+    }
+    to{
+        height: 165px;
+    }
+}
+@keyframes minHeight {
+	from {
+        height: 165px;
+    }
+    to {
+        height: 0px;
+    }
+}

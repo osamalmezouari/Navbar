@@ -1,0 +1,1 @@
+        ulMobile.style.animationName = "heightMax"
